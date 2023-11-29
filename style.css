@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: rgb(242, 244, 235);
+    /* font-size: 60%;
+    fontfamily */
+}
+
+.header {
+    width: 100%;
+    background-color: #111111;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    color: white;
+    z-index: 3;
+}
+
+.header__logo {
+    width: 9rem;
+    height: 3rem;
+    margin: 1rem;
+}
+
+.navigation__img {
+    height: 3rem;
+    margin: 1rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    background-image: url(./assets/AIphotos/hotellinforest.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero--backgroundcolor {
+    background-color: rgba(98, 192, 151, 0.29);
+    width: 100%;
+    height: 80vh;
+    z-index: 2;
+}
+
+.hero__arrow {
+    height: 4rem;
+    z-index: 2;
+    margin: 1rem;
+    /* kan den hoppa eller nått? */
+}
+
+.frontpage__title {
+    margin: 3rem 3rem;
+    margin-bottom: 1rem;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: "open sans", sans-serif;
+}
+
+.frontpage__text {
+    margin: 1rem 3rem;
+    text-align: center;
+    font-family: "open sans", sans-serif;
+}
+
+.card__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 95%;
+    height: 10rem;
+    background-color: #639E18;
+    color: white;
+    font-family: "open sans", sans-serif;
+    margin: 3rem;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.card:hover {
+    background-color: #649e1896;
+    cursor: pointer;
+}
+
+.card__title {
+    grid-column: auto / span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    font-size: 80%;
+}
+
+.card__img {
+    grid-column: auto / span 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 5px 5px 0;
+}
+
+.card__img--booking {
+    background-image: url(./assets/AIphotos/AI-picture.jpg);
+}
+
+.card__img--about {
+    background-image: url(./assets/AIphotos/aboutHotell.jpeg);
+}
+
+.jumbotron {
+    width: 100%;
+    height: 50vh;
+    background-image: url(./assets/AIphotos/treescircle.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5rem;
+}
+
+.footer {
+    width: 100%;
+    background-color: #222222;
+    color: white;
+    font-family: "open sans", sans-serif;
+}
+
+.footer--padding {
+    padding: 1rem;
+}
+
+.footer__text {
+    font-size: 0.8em;
+    margin: 0.2rem 0 0 0;
+}
+
+.footer__icons {
+    display: flex;
+    margin-right: 1rem;
+
+}
+
+.footer__icons--size {
+    height: 2rem;
+    margin: 2rem 0rem 3rem 1rem;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 700px) {
+
+    /* nav */
+
+    .card__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 3rem;
+    }
+
+    .card {
+        margin: 1rem;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        height: 30vh;
+    }
+}
