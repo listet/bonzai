@@ -12,15 +12,37 @@
     <div class="wrapper">
         <header class="header">
             <img class="header__logo" src="/assets/logo/bonz.ai-logo-white-landscape.png" alt="logo">
-            <nav class="navigation">
-                <img class="navigation__img" src="./assets/icons/1024px-Hamburger_icon_white.svg.png" alt="meny">
-                <!-- <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>-->
+
+            <!-- Mobile nav -->
+            <nav class="header__mobile-menu">
+                <input type="checkbox" class="header__burger" id="burger">
+                <label class="header__burger-btn" for="burger">
+                    <span></span>
+                </label>
+                <ul class="header__mobile-menu-list">
+                    <li class="header__mobile-list-item"><a href="#" class="header__mobile-menu-link">Boka rum</a></li>
+                    <li class="header__mobile-list-item"><a href="#" class="header__mobile-menu-link">Om hotellet</a>
+                    </li>
+                    <li class="header__mobile-list-item"><a href="#" class="header__mobile-menu-link">Adress</a></li>
+                    <li class="header__mobile-list-item"><a href="#" class="header__mobile-menu-link">Kontakt</a></li>
+                </ul>
             </nav>
+
+            <!-- Desktop nav -->
+
+            <nav class="header__desktop-menu">
+                <ul class="header__desktop-menu-list">
+                    <li class="header__desktop-list-item"><a href="#" class="header__desktop-menu-link">Boka rum</a>
+                    </li>
+                    <li class="header__desktop-list-item"><a href="#" class="header__desktop-menu-link">Om hotellet</a>
+                    </li>
+                    <li class="header__desktop-list-item"><a href="#" class="header__desktop-menu-link">Adress</a></li>
+                    <li class="header__desktop-list-item"><a href="#" class="header__desktop-menu-link">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <!-- main -->
+
         </header>
         <main class="main">
             <section class="hero">
@@ -54,20 +76,20 @@
             <section class="jumbotron"></section>
         </main>
         <footer class="footer">
-            <section class="footer--padding footer__about">
-                <h6>About</h6>
+            <section class="footer--padding">
+                <h6 class="footer__title">Om oss</h6>
                 <p class="footer__text">Lorem ips dolor sit amet.</p>
                 <p class="footer__text">Lorem ipsum ddrtbt fsr olor sit amet.</p>
                 <p class="footer__text">Lorem ipsum amet.</p>
             </section>
-            <section class="footer--padding footer__adress">
-                <h6>Adress</h6>
+            <section class="footer--padding">
+                <h6 class="footer__title">Adress</h6>
                 <p class="footer__text">Lorem ipsum dolor sdsf fsf sdf it amet.</p>
                 <p class="footer__text">Lorem ipsut.</p>
                 <p class="footer__text">Lorem ipsum dosze sef smet.</p>
             </section>
-            <section class="footer--padding footer__contact">
-                <h6>Contact</h6>
+            <section class="footer--padding">
+                <h6 class="footer__title">Kontakt</h6>
                 <p class="footer__text">Lorem ipsum sit amet.</p>
                 <p class="footer__text">Lorem ipzsor siservwsr saw sdt amet.</p>
                 <p class="footer__text">Lorem ipsum doloeserzw amet.</p>
