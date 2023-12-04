@@ -378,6 +378,39 @@
 /* About*/
 
 
+.about__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__title {
+    font-family: "open sans", sans-serif;
+    margin: 1rem;
+}
+
+.about__text {
+    font-family: "open sans", sans-serif;
+    margin: 0.5rem 3rem 3rem 3rem;
+    font-size: smaller;
+    text-align: center;
+}
+
+.about__img {
+    height: 14rem;
+    margin: 2rem;
+}
+
+.about__img--round {
+    border-radius: 100%;
+    margin: 2rem;
+}
+
+.about__img--big {
+    width: 100%;
+}
+
 /* footer */
 
 .footer {
