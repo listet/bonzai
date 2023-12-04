@@ -265,6 +265,7 @@
 
 /* booking */
 
+
 .form__container {
     width: 100%;
     background-color: #222222;
@@ -274,12 +275,18 @@
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    box-shadow: #111111 0 0 5px 0;
+}
+
+.form__title {
+    margin-bottom: 1rem;
+    margin-left: 3rem;
 }
 
 .form {
     display: flex;
     flex-direction: column;
+    padding: 1rem 5rem;
+    box-shadow: #111111 0px 5px 5px;
 }
 
 .form__text {
@@ -290,6 +297,7 @@
     font-family: "open sans", sans-serif;
     margin: 0.3rem 0;
     padding: 0.3rem;
+    max-width: 200px;
 }
 
 .form__placing {
@@ -307,7 +315,65 @@
     font-family: "open sans", sans-serif;
 }
 
+.form__result {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    background-color: white;
+    color: black;
+    box-shadow: #111111;
+    border-radius: 5px;
+    margin: 1rem;
+    background-color: rgb(242, 244, 235);
+}
 
+.result__img {
+    align-self: center;
+    height: 12rem;
+    width: 14rem;
+    padding: 0.5rem;
+}
+
+.result__title {
+    margin-bottom: 0.4rem;
+    margin-left: 0.5rem;
+}
+
+.result__text {
+    font-size: smaller;
+    margin: 0rem 0.5rem 0.5rem 0.5rem;
+}
+
+.result__text--bold {
+    text-align: right;
+    font-weight: 700;
+}
+
+.result__button {
+    margin: 1rem 2rem;
+    padding: 0.7rem 1.8rem;
+    align-self: center;
+    background-color: rgba(111, 137, 106);
+    color: white;
+    font-family: "open sans", sans-serif;
+    border-radius: 5px;
+    border-style: none;
+
+}
+
+.result__button:hover {
+    background-color: rgb(159, 184, 154);
+    cursor: pointer;
+}
+
+.booking__bridgeimg {
+    background-image: url(assets/AIphotos/forest-bridge.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+}
 
 /* About*/
 
@@ -369,6 +435,15 @@
 
     .card {
         margin: 1rem;
+    }
+
+    .form__container {
+        align-items: flex-start;
+    }
+
+    .result__container {
+        display: flex;
+        max-width: 1000px;
     }
 
     .footer {

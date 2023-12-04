@@ -52,8 +52,9 @@
         </header>
         <!-- main -->
 
-        <main class="main">
+        <main class="main__booking">
             <section class="form__container">
+
                 <h3 class="form__title">Börja din bokning här:</h3>
                 <form class="form">
                     <article class="form__text form__placing">
@@ -72,15 +73,57 @@
                         <label for="animals">Önskar djurvänligt boende:</label>
                         <input type="checkbox" name="animals" id="animals">
                     </article>
-
-                    <input type="submit" class="form__button" value="Se lediga rum och priser">
+                    <details>
+                        <summary>
+                            <input type="submit" class="form__button" value="Se lediga rum och priser">
+                        </summary>
                 </form>
+                <section class="result__container">
+                    <article class="form__result">
+                        <img class="result__img" src="assets/photos/03-day.jpg" alt="">
+                        <h4 class="result__title">Elegant Essentials</h4>
+                        <p class="result__text">kvadratmeter</p>
+                        <p class="result__text">Lorem ipsum dolor sit amet. </p>
+                        <p class="result__text">beskrivning Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Illum, rem.</p>
+                        <p class="result__text">pris per natt:
+                            <span class="result__text--bold">1772:-</span>
+                        </p>
+                        <button class="result__button">Boka är</button>
+                    </article>
+                    <article class="form__result">
+                        <img class="result__img" src="assets/photos/02-day.jpg" alt="">
+                        <h4 class="result__title">Elegent Exceptional</h4>
+                        <p class="result__text">kvadratmeter</p>
+                        <p class="result__text">Lorem ipsum dolor sit amet. </p>
+                        <p class="result__text">beskrivning Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Illum, rem.</p>
+                        <p class="result__text">pris per natt:
+                            <span class="result__text--bold">2219:-</span>
+                        </p>
+                        <button class="result__button">Boka är</button>
+                    </article>
+                    <article class="form__result">
+                        <img class="result__img" src="assets/photos/05-day.jpg" alt="">
+                        <h4 class="result__title">Graceful Deluxe</h4>
+                        <p class="result__text">kvadratmeter</p>
+                        <p class="result__text">Lorem ipsum dolor sit amet. </p>
+                        <p class="result__text">beskrivning Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Illum, rem.</p>
+                        <p class="result__text">pris per natt:
+                            <span class="result__text--bold">2403:-</span>
+                        </p>
+                        <button class="result__button">Boka är</button>
+                    </article>
+                </section>
+                </details>
+
             </section>
-            <details>
-                <summary>
-                    <h4>Hellooo</h4>
-                </summary>
-            </details>
+            <section class="booking__bridgeimg"></section>
+
         </main>
 
         <!-- footer -->
