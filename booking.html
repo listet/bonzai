@@ -52,7 +52,35 @@
         </header>
         <!-- main -->
 
-        <main>
+        <main class="main">
+            <section class="form__container">
+                <h3 class="form__title">Börja din bokning här:</h3>
+                <form class="form">
+                    <article class="form__text form__placing">
+                        <label for="date">Datum för ankomst:</label>
+                        <input type="date" name="date" id="datearrival">
+                    </article>
+                    <article class="form__text form__placing">
+                        <label for="date">Datum för avresa:</label>
+                        <input type="date" name="date" id="datedeparture">
+                    </article>
+                    <article class="form__text">
+                        <label for="number">Antal gäster:</label>
+                        <input type="number" name="guests" min="1" max="10" id="guests">
+                    </article>
+                    <article class="form__text">
+                        <label for="animals">Önskar djurvänligt boende:</label>
+                        <input type="checkbox" name="animals" id="animals">
+                    </article>
+
+                    <input type="submit" class="form__button" value="Se lediga rum och priser">
+                </form>
+            </section>
+            <details>
+                <summary>
+                    <h4>Hellooo</h4>
+                </summary>
+            </details>
         </main>
 
         <!-- footer -->
