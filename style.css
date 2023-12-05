@@ -159,6 +159,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero {
@@ -310,6 +313,7 @@
     padding: 0.5rem 0.5rem;
     align-self: flex-end;
     border-radius: 5px;
+    border-style: none;
     background-color: #2961CF;
     color: white;
     font-family: "open sans", sans-serif;
@@ -387,28 +391,27 @@
 
 .about__title {
     font-family: "open sans", sans-serif;
-    margin: 1rem;
+    margin: 2rem;
 }
 
 .about__text {
     font-family: "open sans", sans-serif;
-    margin: 0.5rem 3rem 3rem 3rem;
+    margin: 2rem;
     font-size: smaller;
     text-align: center;
 }
 
 .about__img {
-    height: 14rem;
-    margin: 2rem;
-}
-
-.about__img--round {
-    border-radius: 100%;
-    margin: 2rem;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 5px;
+    margin: 2rem 1rem;
 }
 
 .about__img--big {
     width: 100%;
+    height: 60vh;
+    margin-bottom: 0;
 }
 
 /* footer */
@@ -468,6 +471,18 @@
 
     .card {
         margin: 1rem;
+    }
+
+
+
+    .about__article {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about__article--reverse {
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     .form__container {
