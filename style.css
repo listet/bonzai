@@ -123,7 +123,7 @@
 }
 
 .header__mobile-list-item:hover {
-    background-color: rgba(111, 137, 106, 0.8);
+    background-color: rgba(120, 120, 120, 0.8);
 }
 
 
@@ -149,7 +149,7 @@
 }
 
 .header__desktop-menu-link:hover {
-    background-color: rgba(111, 137, 106, 0.8);
+    background-color: rgba(120, 120, 120, 0.8);
 }
 
 
@@ -159,7 +159,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1000px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -174,11 +174,9 @@
 
 }
 
-.hero--backgroundcolor {
-    background-color: rgba(98, 192, 151, 0.29);
+.hero__arrow--position {
     width: 100%;
     height: 80vh;
-    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -188,9 +186,27 @@
 .hero__arrow {
     height: 4rem;
     z-index: 2;
-    margin: 1rem;
-    /* kan den hoppa eller nått? */
+    margin: 3rem;
+    transform-origin: 50% 50%;
+    animation: jump .5s linear alternate;
+    animation-iteration-count: 2;
 }
+
+/* hittad på codepen sedan anpassad*/
+@keyframes jump {
+    0% {
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+
+    40% {
+        transform: translate3d(0, 30%, 0) scale3d(.7, 1.5, 1);
+    }
+
+    100% {
+        transform: translate3d(0, 100%, 0) scale3d(1.5, .7, 1);
+    }
+}
+
 
 .frontpage__title {
     margin: 3rem 3rem;
@@ -219,7 +235,6 @@
     color: white;
     font-family: "open sans", sans-serif;
     margin: 3rem;
-    border-radius: 5px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -296,21 +311,24 @@
     padding: 0.5rem;
 }
 
-.form__text>input {
+.form__input {
     font-family: "open sans", sans-serif;
     margin: 0.3rem 0;
     padding: 0.3rem;
     max-width: 200px;
 }
 
-.form__placing {
+.form__text--placing {
     display: flex;
     flex-direction: column;
 }
 
 .form__button {
+    cursor: pointer;
     margin: 1rem 0;
     padding: 0.5rem 0.5rem;
+    width: 9rem;
+    list-style: none;
     align-self: flex-end;
     border-radius: 5px;
     border-style: none;
@@ -318,6 +336,7 @@
     color: white;
     font-family: "open sans", sans-serif;
 }
+
 
 .form__result {
     display: flex;
@@ -381,14 +400,6 @@
 
 /* About*/
 
-
-.about__article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .about__title {
     font-family: "open sans", sans-serif;
     margin-top: 2rem;
@@ -401,6 +412,14 @@
     text-align: center;
 }
 
+.about__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: article1;
+}
+
 .about__img {
     height: 18rem;
     width: 18rem;
@@ -408,11 +427,6 @@
     margin: 2rem 1rem;
 }
 
-.about__img--big {
-    width: 100%;
-    height: 60vh;
-    margin-bottom: 0;
-}
 
 .aside {
     font-family: "open sans", sans-serif;
@@ -420,6 +434,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    grid-area: aside;
 }
 
 .aside__header {
@@ -434,10 +449,11 @@
     padding: 0.5rem;
     margin: 1rem;
     width: 20rem;
+    font-size: smaller;
 }
 
 .aside__text {
-    margin: 1rem 0;
+    margin: 1rem 1rem;
 }
 
 .aside__img {
@@ -464,6 +480,18 @@
     padding: 1rem 2rem;
     font-weight: 700;
     margin: 2rem;
+}
+
+.about__img--big {
+    background-image: url(assets/photos/09-day.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    margin-bottom: 0;
+    grid-area: bigimg;
+    border-radius: 0;
 }
 
 /* footer */
@@ -534,21 +562,33 @@
         max-width: 1000px;
     }
 
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        height: 30vh;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
     .about__article {
         display: flex;
         flex-direction: row;
+        margin-right: 3rem;
     }
 
     .about__article--reverse {
         display: flex;
         flex-direction: row-reverse;
+        grid-area: article2;
     }
 
-
-
-    .footer {
-        display: flex;
-        justify-content: space-around;
-        height: 30vh;
+    .about {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas:
+            "article1 article1 article1 article1 aside"
+            "article2 article2 article2 article2 aside"
+            "bigimg bigimg bigimg bigimg bigimg ";
     }
 }

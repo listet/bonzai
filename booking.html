@@ -54,28 +54,27 @@
 
         <main class="main">
             <section class="form__container">
-
                 <h3 class="form__title">Börja din bokning här:</h3>
                 <form class="form">
-                    <article class="form__text form__placing">
+                    <article class="form__text form__text--placing">
                         <label for="date">Datum för ankomst:</label>
-                        <input type="date" name="date" id="datearrival">
+                        <input class="form__input" type="date" name="date" id="datearrival">
                     </article>
-                    <article class="form__text form__placing">
+                    <article class="form__text form__text--placing">
                         <label for="date">Datum för avresa:</label>
-                        <input type="date" name="date" id="datedeparture">
+                        <input class="form__input" type="date" name="date" id="datedeparture">
                     </article>
                     <article class="form__text">
                         <label for="number">Antal gäster:</label>
-                        <input type="number" name="guests" min="1" max="10" id="guests">
+                        <input class="form__input" type="number" name="guests" min="1" max="10" id="guests">
                     </article>
                     <article class="form__text">
                         <label for="animals">Önskar djurvänligt boende:</label>
-                        <input type="checkbox" name="animals" id="animals">
+                        <input class="form__input" type="checkbox" name="animals" id="animals">
                     </article>
                     <details>
-                        <summary>
-                            <input type="submit" class="form__button" value="Se lediga rum och priser">
+                        <summary class="form__button">
+                            <h6>Se lediga rum och priser</h6>
                         </summary>
                 </form>
                 <section class="result__container">
@@ -120,10 +119,8 @@
                     </article>
                 </section>
                 </details>
-
             </section>
             <section class="booking__bridgeimg"></section>
-
         </main>
 
         <!-- footer -->
@@ -132,7 +129,7 @@
                 <h6 class="footer__title">Om oss</h6>
                 <p class="footer__text">Nyheter</p>
                 <p class="footer__text">Historia</p>
-                <p class="footer__text">Miljö policy</p>
+                <p class="footer__text">Miljöpolicy</p>
                 <p class="footer__text">Galleri</p>
             </section>
             <section class="footer--padding">
@@ -148,13 +145,9 @@
                 <p class="footer__text">Sociala medier:</p>
             </section>
             <section class="footer__icons">
-                <img class="footer__icons--size" src="./assets/icons/3225191_app_instagram_logo_media_popular_icon.png"
-                    alt="instagram-logo">
-                <img class="footer__icons--size" src="./assets/icons/3225194_app_facebook_logo_media_popular_icon.png"
-                    alt="facebook-logo">
-                <img class="footer__icons--size" src="./assets/icons/4375113_logo_tripadvisor_icon.png"
-                    alt="tripadvidor-logo">
-                <img class="footer__icons--size" src="./assets/icons/294709_circle_twitter_icon.png" alt="twitter-logo">
+                <img class="footer__icons--size" src="./assets/icons/instagram.svg" alt="instagram-logo">
+                <img class="footer__icons--size" src="./assets/icons/facebook.svg" alt="facebook-logo">
+                <img class="footer__icons--size" src="./assets/icons/square-x-twitter.svg" alt="twitter-logo">
             </section>
         </footer>
     </div>
