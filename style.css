@@ -209,9 +209,8 @@
 
 
 .frontpage__title {
-    margin: 3rem 3rem;
-    margin-bottom: 1rem;
-    font-size: 2.5em;
+    margin: 4rem 3rem;
+    font-size: 5em;
     text-align: center;
     font-family: "open sans", sans-serif;
 }
@@ -402,6 +401,7 @@
 
 .about__title {
     font-family: "open sans", sans-serif;
+    font-size: 2rem;
     margin-top: 2rem;
 }
 
@@ -540,6 +540,10 @@
 
     .header__desktop-menu {
         display: block;
+    }
+
+    .frontpage__text {
+        margin: 1rem 8rem;
     }
 
     .card__container {
